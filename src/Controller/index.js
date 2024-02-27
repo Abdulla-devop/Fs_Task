@@ -1,6 +1,9 @@
+//imported fs file to read and write file
 import fs from 'fs'
 import path from 'path'
+// to create a text file.varible file control the folder asset
 const file = 'src/asset'
+//using async to read and write file inside the asset folder
 const readWriteFile = async(req,res)=>{
   try {
    let dateTime = new Date().toISOString().replace(new RegExp(':','g'),'_')
